@@ -11,6 +11,7 @@ Source0:	https://github.com/cemu-project/Cemu/archive/v%{version}/%{oname}-%{ver
 
 BuildRequires:  cmake
 BuildRequires:  nasm
+BuildRequires:  ninja
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(libsecret-1)
 BuildRequires:  pkgconfig(libgcrypt)
@@ -29,11 +30,11 @@ Cemu is currently only available for 64-bit Windows and Linux devices.
 %autosetup -n %{oname}-%{version} -p1
 
 %build
-%cmake -DCMAKE_BUILD_TYPE=release -DCMAKE_C_COMPILER=/usr/bin/clang-14 -DCMAKE_CXX_COMPILER=/usr/bin/clang++-14
+%cmake -DCMAKE_BUILD_TYPE=release -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -G Ninja
 
-%make_build
+%ninja_build -C build
 
 %install
-%make_install -C build
+%ninja_install -C build
 
 %files
