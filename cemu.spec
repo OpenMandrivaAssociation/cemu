@@ -1,4 +1,4 @@
-
+%define oname Cemu
 Summary:	Cemu is a Wii U emulator
 Name:		cemu
 Version:	2.0
@@ -7,7 +7,7 @@ Group:    Emulators/Games
 License:	MPL-2.0
 Group:		Emulators
 Url:		https://cemu.info/
-Source0:	https://github.com/cemu-project/Cemu/archive/v%{version}/%{name}-%{version}.tar.gz
+Source0:	https://github.com/cemu-project/Cemu/archive/v%{version}/%{oname}-%{version}.tar.gz
 
 BuildRequires:  cmake
 BuildRequires:  nasm
@@ -26,7 +26,7 @@ Cemu is currently only available for 64-bit Windows and Linux devices.
 #----------------------------------------------------------------------------
 
 %prep
-%autosetup -p1
+%autosetup -n %{oname}-%{version} -p1
 
 %build
 %cmake
