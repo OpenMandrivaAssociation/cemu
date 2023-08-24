@@ -30,11 +30,11 @@ Cemu is currently only available for 64-bit Windows and Linux devices.
 %autosetup -n %{oname}-2.0-47 -p1
 
 %build
-%cmake -DCMAKE_BUILD_TYPE=release -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -G Ninja -DCMAKE_MAKE_PROGRAM=/usr/bin/ninja
+%cmake -DCMAKE_BUILD_TYPE=release
 
-%ninja_build -C build
+%make_build
 
 %install
-%ninja_install -C build
+%make_install -C build
 
 %files
