@@ -12,6 +12,7 @@ Source0:	https://github.com/cemu-project/Cemu/archive/v2.1/%{oname}-2.1.tar.gz
 BuildRequires:  cmake
 BuildRequires:  nasm
 BuildRequires:  ninja
+BuildRequires:  boost-devel
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(libsecret-1)
 BuildRequires:  pkgconfig(libgcrypt)
