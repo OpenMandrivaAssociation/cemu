@@ -46,7 +46,7 @@ BuildRequires:  pkgconfig(speexdsp)
 BuildRequires:  pkgconfig(vulkan)
 BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(wayland-protocols)
-BuildRequires:  pkgconfig(wayland-scanner
+BuildRequires:  pkgconfig(wayland-scanner)
 BuildRequires:  cmake(glslang)
 
 %description
