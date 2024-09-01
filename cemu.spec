@@ -52,6 +52,7 @@ BuildRequires:  pkgconfig(wayland-scanner)
 BuildRequires:  cmake(glslang)
 BuildRequires:  glslang
 BuildRequires:  wxwidgets-devel
+BuildRequires:  lib64usb1.0_0
 
 %description
 This is the code repository of Cemu, a Wii U emulator that is able to run most Wii U games and homebrew in a playable state. 
