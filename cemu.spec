@@ -21,7 +21,7 @@ BuildRequires:  pkgconfig(freeglut)
 BuildRequires:  pkgconfig(alsa)
 BuildRequires:  pkgconfig(jack)
 BuildRequires:  pkgconfig(fmt)
-BuildRequires:  pkgconfig(glm)
+BuildRequires:  cmake(glm)
 BuildRequires:  pkgconfig(openssl)
 BuildRequires:  pkgconfig(hidapi-hidraw)
 BuildRequires:  pkgconfig(libavdevice)
@@ -49,7 +49,6 @@ BuildRequires:  pkgconfig(wayland-protocols)
 BuildRequires:  pkgconfig(wayland-scanner)
 BuildRequires:  cmake(glslang)
 BuildRequires:  glslang
-BuildRequires:  pkgconfig(glm)
 
 %description
 This is the code repository of Cemu, a Wii U emulator that is able to run most Wii U games and homebrew in a playable state. 
