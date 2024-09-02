@@ -1,0 +1,12 @@
+diff -up Cemu-2.1/src/gui/GeneralSettings2.cpp.omv~ Cemu-2.1/src/gui/GeneralSettings2.cpp
+--- Cemu-2.1/src/gui/GeneralSettings2.cpp.omv~	2024-09-02 20:48:56.298252912 +0200
++++ Cemu-2.1/src/gui/GeneralSettings2.cpp	2024-09-02 20:49:08.408383068 +0200
+@@ -21,7 +21,7 @@
+ #include "audio/DirectSoundAPI.h"
+ #include "audio/XAudio27API.h"
+ #endif
+-#include "audio/CubebAPI.h"
++//#include "audio/CubebAPI.h"
+ 
+ #include "audio/IAudioInputAPI.h"
+ 
