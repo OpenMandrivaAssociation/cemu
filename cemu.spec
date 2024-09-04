@@ -57,7 +57,9 @@ BuildRequires:  pkgconfig(wayland-scanner)
 BuildRequires:  cmake(glslang)
 BuildRequires:  glslang
 BuildRequires:  wxwidgets-devel
-BuildRequires:  lib64usb1.0_0
+BuildRequires:  %{_lib}usb1.0_0
+BuildRequires:  %{_lib}zstd-static-devel
+
 BuildSystem:	cmake
 BuildOption:	-DENABLE_VCPKG:BOOL=OFF
 BuildOption:	-DBUILD_SHARED_LIBS:BOOL=OFF
