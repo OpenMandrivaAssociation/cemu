@@ -4,7 +4,7 @@
 Summary:	Cemu is a Wii U emulator
 Name:		cemu
 Version:	2.3
-Release:	1
+Release:	2
 Group:		Emulators/Games
 License:	MPL-2.0
 Url:		https://cemu.info/
