@@ -3,12 +3,12 @@
 %define oname Cemu
 Summary:	Cemu is a Wii U emulator
 Name:		cemu
-Version:	2.3
-Release:	2
+Version:	2.5
+Release:	1
 Group:		Emulators/Games
 License:	MPL-2.0
 Url:		https://cemu.info/
-Source0:	https://github.com/cemu-project/Cemu/archive/v2.1/%{oname}-2.1.tar.gz
+Source0:	https://github.com/cemu-project/Cemu/archive/refs/tags/v%{version}.tar.gz
 # Pulled in as git submodules upstream.
 # Check gitweb for correct versions.
 Source1:	https://github.com/Exzap/ZArchive/archive/d2c717730092c7bf8cbb033b12fd4001b7c4d932.tar.gz#/zarchive.tar.gz
@@ -68,7 +68,6 @@ BuildOption:	-DBUILD_STATIC_LIBS:BOOL=ON
 BuildOption:	-DENABLE_CUBEB:BOOL=OFF
 
 %patchlist
-cemu-fmt-11.x.patch
 cemu-2.1-fix-build-without-cubeb.patch
 
 %description
@@ -80,7 +79,7 @@ Cemu is currently only available for 64-bit Windows and Linux devices.
 #----------------------------------------------------------------------------
 
 %prep
-%autosetup -n %{oname}-2.1 -p1
+%autosetup -n %{oname}-%{version} -p1
 cd dependencies
 rm -rf ZArchive imgui
 tar xf %{S:1}
