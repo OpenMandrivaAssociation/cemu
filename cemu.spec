@@ -17,6 +17,7 @@ BuildRequires:  cmake
 BuildRequires:  nasm
 BuildRequires:  ninja
 BuildRequires:  boost-devel
+BuildRequires:  pkgconfig(bluez)
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(libsecret-1)
 BuildRequires:  pkgconfig(libgcrypt)
