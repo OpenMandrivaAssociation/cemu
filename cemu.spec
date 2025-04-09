@@ -3,7 +3,7 @@
 %define oname Cemu
 Summary:	Cemu is a Wii U emulator
 Name:		cemu
-Version:	2.5
+Version:	2.6
 Release:	1
 Group:		Emulators/Games
 License:	MPL-2.0
