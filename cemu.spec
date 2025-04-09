@@ -3,7 +3,7 @@
 %define oname Cemu
 Summary:	Cemu is a Wii U emulator
 Name:		cemu
-Version:	2.5
+Version:	2.6
 Release:	1
 Group:		Emulators/Games
 License:	MPL-2.0
@@ -70,7 +70,6 @@ BuildOption:	-DENABLE_CUBEB:BOOL=OFF
 
 %patchlist
 cemu-2.1-fix-build-without-cubeb.patch
-https://github.com/cemu-project/Cemu/pull/1455.patch
 
 %description
 This is the code repository of Cemu, a Wii U emulator that is able to run most Wii U games and homebrew in a playable state. 
